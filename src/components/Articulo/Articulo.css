@@ -1,0 +1,18 @@
+.articulo__nombre{
+    margin: 1rem 0rem;
+}
+.articulo__desc{
+    margin-top: 1rem;
+}
+.articulo__precio{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.btn__Agregar{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: #08d9d6;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

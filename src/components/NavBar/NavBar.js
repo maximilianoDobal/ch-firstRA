@@ -1,4 +1,7 @@
-import '../App.css';
+import './NavBar.css';
+import CarritoIcono from '../Icons/CarritoIcono/CarritoIcono';
+
+
 
 const NavBar = () => {
     return (
@@ -8,8 +11,8 @@ const NavBar = () => {
                     <h1><span>P</span>hoto<span>S</span>tore</h1>
                 </div>
                 <div className="hero__btns">
-                    <button className="btn"><a href="">Tienda</a></button>
-                    <button className="btn btn__contacto"><a href="" class>Contacto</a></button>
+                    <button className="btn"><a href="" className="textoGrande">Tienda</a></button>
+                    <button className="btn btn__contacto"><a href="" className="btn__contacto--texto textoGrande">Contacto</a></button>
                 </div>
             </div>
             <div className="navBar__container">
@@ -22,6 +25,7 @@ const NavBar = () => {
                         <li><a href="">Nosotros</a></li>
                         <li><a href="">Galeria</a></li>
                         <li><a href="">Contacto</a></li>
+                        <li><a href=""><CarritoIcono /></a></li>
                     </ul>
                 </div>
             </div>

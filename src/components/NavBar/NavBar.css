@@ -1,0 +1,72 @@
+a{
+    color: #212121;
+}
+.hero{
+    height: 100vh;
+    background-image: url(../../imagenes/pexels-kaique-rocha-108148.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+  }
+  .hero__logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  span{
+    color: #08d9d6;
+  }
+  .hero__btns{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .textoGrande{
+      font-size: 1.25rem;
+  }
+
+  .btn{
+    border: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    width: 15%;
+    background-color: #08d9d6;
+  }
+  .btn__contacto {
+    border: 2px solid #08d9d6;
+    background-color: transparent;
+  }
+  .btn__contacto--texto{
+    color: #08d9d6; 
+  }
+  .navBar__container{
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+  }
+  .navBar__logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #eaeaea;
+  }
+  h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navBar__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
