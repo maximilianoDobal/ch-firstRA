@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillPlusCircle } from 'react-icons/ai';
 
-const PlusAgregar = () => {
+const PlusArticulo = () => {
     return (
         <>
             <AiFillPlusCircle />
@@ -9,4 +9,4 @@ const PlusAgregar = () => {
     )
 }
 
-export default PlusAgregar
+export default PlusArticulo

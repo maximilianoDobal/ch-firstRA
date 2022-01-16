@@ -1,6 +1,6 @@
 import './NavBar.css';
 import CarritoIcono from '../Icons/CarritoIcono/CarritoIcono';
-
+import ContadorCarrito from '../ContadorCarrito/ContadorCarrito';
 
 
 const NavBar = () => {
@@ -25,7 +25,7 @@ const NavBar = () => {
                         <li><a href="">Nosotros</a></li>
                         <li><a href="">Galeria</a></li>
                         <li><a href="">Contacto</a></li>
-                        <li><a href=""><CarritoIcono /></a></li>
+                        <li><a href=""><CarritoIcono /> <ContadorCarrito /></a></li>
                     </ul>
                 </div>
             </div>
