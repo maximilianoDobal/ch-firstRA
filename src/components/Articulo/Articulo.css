@@ -8,6 +8,11 @@
     margin-top: 1rem;
     font-weight: bold;
 }
+.cantidadContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn__Agregar{
     margin-top: 1rem;
     padding: 1rem;
@@ -15,4 +20,23 @@
     background-color: #08d9d6;
     font-size: 1.1rem;
     cursor: pointer;
+}
+.btn__cantidad{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 1rem 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.btn__cantidad:hover{
+    background-color: #08d9d6;
+    border: none;
+}
+
+.cantidad__texto{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
