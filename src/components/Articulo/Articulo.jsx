@@ -25,9 +25,9 @@ const Articulo = ({name, desc, price, image}) => {
             <p className="articulo__desc">{desc}</p>
             <p className="articulo__precio">${price}</p>
             <div className="cantidadContainer">
-                <button onClick={agregarCantidad} className="btn__cantidad">+</button>
-                <p className="cantidad__texto">{cantidad}</p>
                 <button onClick={restarCantidad} className="btn__cantidad">-</button>
+                <p className="cantidad__texto">{cantidad}</p>
+                <button onClick={agregarCantidad} className="btn__cantidad">+</button>            
             </div>
             <button className="btn__Agregar">Agregar <PlusAgregar /></button>
             
