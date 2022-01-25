@@ -6,16 +6,3 @@
 span{
     color: #08d9d6;
 }
-
-.productosContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}

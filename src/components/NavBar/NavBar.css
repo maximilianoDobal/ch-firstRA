@@ -1,4 +1,7 @@
 a{
+    text-decoration: none;
+}
+.nav__link{
     color: #212121;
 }
 .navBar__container{
