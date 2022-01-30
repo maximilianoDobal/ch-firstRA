@@ -2,21 +2,23 @@ import "./NavBar.css";
 
 import CarritoIcono from "../Icons/CarritoIcono/CarritoIcono";
 import Badge from "react-bootstrap/Badge";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
+
   return (
     <>
         <nav className="navBar__container">
             <div className="navBar__logo">
-            <h2><span>P</span>hoto<span>S</span>tore</h2>
+            <h2><Link to="/"><span>P</span>hoto<span>S</span>tore</Link></h2>
             </div>
             <div>
                 <ul className="navBar__lista m-2">
-                    <li><a href="" className="nav__link">Productos</a></li>
-                    <li><a href="" className="nav__link">Nosotros</a></li>
-                    <li><a href="" className="nav__link">Galeria</a></li>
-                    <li><a href="" className="nav__link">Contacto</a></li>
-                    <li><a href="" className="nav__link"><CarritoIcono /><Badge bg="warning" pill>4</Badge></a></li>
+                    <li><Link to="/store">Productos</Link></li>
+                    <li><Link to="/about">Nosotros</Link></li>
+                    <li><Link to="/gallery">Galeria</Link></li>
+                    <li><Link to="/contact">Contacto</Link></li>
+                    <li><CarritoIcono /><Badge bg="warning" pill>4</Badge></li>
                 </ul>
             </div>
         </nav>

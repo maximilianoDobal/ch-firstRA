@@ -37,12 +37,12 @@ const Productos = () => {
     } else if (errors){
         return <p>Ha habido un error</p>
     } else {
-        return <Container fluid>
+        return <Container fluid className="pb-3">
             <Row>
                     <h2 className="productos__Title"><span>P</span>roductos</h2>
                     {prods.map((prod) => {
                         return <Col md={4} className="d-flex flex-column align-items-center align-content-md-center justify-items-md-center"> 
-                            <Articulo key={prods.id} name={prod.name} desc={prod.desc} image={prod.image} price={prod.price}/>
+                            <Articulo key={prods.id} name={prod.name} desc={prod.desc} image={prod.image} price={prod.price} id={prod.id}/>
                         </Col>
                         
                     })}

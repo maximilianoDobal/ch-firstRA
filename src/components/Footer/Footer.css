@@ -1,0 +1,23 @@
+/* Celeste: #08d9d6
+Azul Oscuro: #252a34
+Rosa: #ff2e63
+Gris/Blanco: #eaeaea
+Divisor: #BDBDBD
+Texto: #212121 */
+.footer-container{
+    min-height: 15vh;
+    background-color: #252a34;
+    color: #eaeaea;
+}
+
+span{
+    color: #08d9d6;
+}
+.btn__footer{
+    background-color: #08d9d6;
+    border-color: #08d9d6;
+}
+.btn__footer:hover{
+    background-color: #252a34;
+    border-color: #252a34;
+}

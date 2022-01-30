@@ -19,7 +19,18 @@
     background-color: #08d9d6;
     font-size: 1.1rem;
     cursor: pointer;
-
+    transition: 
+        background-color 250ms ease-in-out,
+        transform 50ms ease-in-out,
+        border-color 250ms ease-in-out;
+}
+.btn__Agregar:hover{
+    border-color: hsl(179, 93%, 24%);
+    background-color: hsl(179, 93%, 24%);
+    color: #eaeaea;
+}
+.btn__Agregar:active{
+    transform: scale(0.9);
 }
 .btn__cantidad{
     font-size: 1.5rem;
@@ -46,8 +57,19 @@
     color: #08d9d6;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: 
+        background-color 250ms ease-in-out,
+        transform 50ms ease-in-out,
+        border-color 250ms ease-in-out;
 }
-
+.btn__verMas:hover{
+    border-color: #08d9d6;
+    background-color: #08d9d6;
+    color: #eaeaea;
+}
+.btn__verMas:active{
+    transform: scale(0.9);
+}
 .cantidad__texto{
     font-size: 1.5rem;
     font-weight: bold;

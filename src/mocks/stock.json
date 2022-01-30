@@ -53,7 +53,7 @@
         "profundidad": "77.5 mm",
         "peso": "665 g"
       },
-      "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
+      "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quamLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quamLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
     {
       "id": 2,
@@ -72,11 +72,13 @@
         "color": "negro"
       },
       "sensorOptico": { "tipo": "CMOS", "tamaño": "35.7 mm x 23.8 mm" },
+      "zoom":{ "zoomDigital": "si"},
       "memoria": {
         "tipos": "Memory Stick Pro Duo, Memory Stick PRO-HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC"
       },
       "lente": { "montura": "Sony E", "intercambiable": "no" },
       "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "NP-FW50" },
+      "flash": {"incluye": "no"},
       "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
       "especificaciones": {
         "tipo": "Sin espejo",
@@ -122,6 +124,7 @@
       },
       "lente": { "montura": "Sony E", "intercambiable": "no" },
       "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "NP-FW50" },
+      "flash": { "flashIncorp": "no" },
       "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
       "especificaciones": {
         "tipo": "Sin espejo",
@@ -130,7 +133,6 @@
         "conectividad": "Wi-Fi, NFC",
         "interfaces": "micro-USB, micro-HDMI"
       },
-      "flash": { "flashIncorp": "no" },
       "enfoque": {
         "modo": "Simple, Continuo",
         "manual": "si",
@@ -162,6 +164,7 @@
         "kit": "si"
       },
       "sensorOptico": { "tipo": "CMOS", "tamaño": "36 mm x 24 mm" },
+      "zoom": {"zoomDigital": "si"},
       "memoria": { "tipos": "SD UHS-I, SDHC UHS-I, SDXC UHS-I" },
       "lente": {
         "montura": "Canon EFE",
@@ -173,6 +176,7 @@
         "funcInterc": "si"
       },
       "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "LP-E6N" },
+      "flash": { "flashIncorp": "no" },
       "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
       "especificaciones": {
         "tipo": "DSLR",
@@ -186,11 +190,16 @@
         "accesoriosInc": "1 ocular, 1 correa, 1 cargador de batería, 1 batería, 1 CD, 1 cable de video, 1 cable interfaz, 1 manual",
         "restAgua": "Sí"
       },
-      "flash": { "flashIncorp": "no" },
       "enfoque": {
         "modo": "Simple, Continuo, Automático",
         "manual": "si",
         "autofoco": "si"
+      },
+      "pesoDimen": {
+        "ancho": "128.9 mm",
+        "altura": "96.4 mm",
+        "profundidad": "77.5 mm",
+        "peso": "665 g"
       },
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
@@ -211,6 +220,7 @@
         "kit": "si"
       },
       "sensorOptico": { "tipo": "CMOS", "tamaño": "23.5 mm x 15.7 mm" },
+      "zoom": {"zoomDigital": "si"},
       "memoria": { "tipos": "SD, SDHC UHS-I, SDXC UHS-I" },
       "lente": {
         "montura": "Nikon F",
@@ -221,6 +231,7 @@
         "funcInterc": "si"
       },
       "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "EN-EL15a" },
+      "flash": { "flashIncorp": "si", "rangoEfec": "12 m" },
       "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
       "especificaciones": {
         "tipo": "DSLR",
@@ -233,11 +244,16 @@
         "interfaces": "USB micro-B, HDMI-C, Stereo jack 3.5 mm",
         "accesoriosInc": "1 correa, 1 tapa del cuerpo, 1 protector de ocular, 1 tapa del ocular, 1 batería recargable, 1 cargador de batería, 1 cable USB"
       },
-      "flash": { "flashIncorp": "si", "rangoEfec": "12 m" },
       "enfoque": {
         "modo": "Automático, Simple",
         "manual": "si",
         "autofoco": "si"
+      },
+      "pesoDimen": {
+        "ancho": "130.9 mm",
+        "altura": "94.4 mm",
+        "profundidad": "73.5 mm",
+        "peso": "635 g"
       },
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     }

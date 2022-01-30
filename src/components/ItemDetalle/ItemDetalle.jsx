@@ -45,9 +45,9 @@ const ItemDetalle = ({
       <Container>
         <Row>
           <Col md={12} className="d-flex justify-content-center">
-            <h2>{name}</h2>
+            <h2 className="mb-4">{name}</h2>
           </Col>
-          <Col md={5}>
+          <Col md={5} className="d-flex justify-content-center">
             <img src={image} alt={name} />
           </Col>
           <Col md={7}>
@@ -81,12 +81,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(caracGen).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -102,12 +100,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(sensorOptico).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -123,12 +119,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(zoom).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -144,12 +138,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(memoria).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
-                        <td>{key}</td>
+                      <tr key={key}>
+                        <td >{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -165,12 +157,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(lente).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -186,12 +176,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(bateria).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -207,12 +195,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(flash).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -228,12 +214,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(obturador).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -249,12 +233,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(especificaciones).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -270,12 +252,10 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(enfoque).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
@@ -291,16 +271,18 @@ const ItemDetalle = ({
               <tbody>
                 {Object.entries(pesoDimen).map(([key, value]) => {
                   return (
-                    <>
-                      <tr>
+                      <tr key={key}>
                         <td>{key}</td>
                         <td>{value}</td>
                       </tr>
-                    </>
                   );
                 })}
               </tbody>
             </Table>
+          </Col>
+          <Col md={12}>
+            <h3>Descripcion</h3>
+          <p>{fullDesc}</p>
           </Col>
         </Row>
       </Container>

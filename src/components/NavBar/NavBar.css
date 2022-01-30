@@ -1,8 +1,9 @@
 a{
     text-decoration: none;
-}
-.nav__link{
     color: #212121;
+}
+a:hover{
+    color: inherit;
 }
 .navBar__container{
     display: flex;
@@ -32,4 +33,10 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+ul li a{
+    transition: color 250ms ease-in-out;
+}
+ul li a:hover{
+    color: #08d9d6;
 }

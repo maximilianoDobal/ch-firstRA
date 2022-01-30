@@ -4,8 +4,19 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import { useNavigate } from 'react-router'
 
 const HeroSec = () => {
+
+    const navigate = useNavigate()
+
+    const goToStore = () => {
+        navigate("/store")
+    }
+    const goToAbout = () => {
+        navigate("/about")
+    }
+
     return (
         <Container fluid>
             <Row className="hero">
@@ -14,8 +25,8 @@ const HeroSec = () => {
                         <h1><span>P</span>hoto<span>S</span>tore</h1>
                     </div>
                     <div>
-                        <Button size ="lg" className="btn__tienda"><a href="" className="btn__tienda--link">Tienda</a></Button>
-                        <Button className="btn__contacto" size ="lg"><a href="" className="btn__contacto--link">Contacto</a></Button>
+                        <Button size ="lg" className="btn__tienda" onClick={goToStore} >Tienda</Button>
+                        <Button className="btn__contacto" size ="lg" onClick={goToAbout}>Nosotros</Button>
                     </div>
                 </Col>
             </Row>

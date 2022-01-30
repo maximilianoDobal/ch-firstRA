@@ -13,15 +13,40 @@ span {
   margin-right: 1rem;
   background-color: #08d9d6;
   border-color: #08d9d6;
-}
-.btn__tienda--link {
   color: #eaeaea;
+  transition: 
+    background-color 250ms ease-in-out,
+    transform 50ms ease-in-out,
+    border-color 250ms ease-in-out;
+}
+.btn__tienda:hover{
+  background-color: hsl(179, 93%, 24%);
+  border-color: hsl(179, 93%, 24%);
+}
+.btn__tienda:active{
+  background-color: hsl(179, 93%, 24%);
+  border-color: hsl(179, 93%, 24%);
+  transform: scale(0.9)
+
 }
 .btn__contacto {
   margin-left: 1rem;
   background-color: transparent;
   border-color: #eaeaea;
-}
-.btn__contacto--link {
   color: #eaeaea;
+  transition: 
+    background-color 250ms ease-in-out,
+    transform 50ms ease-in-out,
+    border-color 250ms ease-in-out;
+}
+.btn__contacto:hover{
+  color: #eaeaea;
+  border-color: hsl(179, 93%, 24%);
+  background-color: hsl(179, 93%, 24%);
+}
+.btn__contacto:active{
+  color: #eaeaea;
+  border-color: hsl(179, 93%, 24%);
+  background-color: hsl(179, 93%, 24%);
+  transform: scale(0.9);
 }

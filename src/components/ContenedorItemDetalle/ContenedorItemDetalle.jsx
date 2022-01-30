@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 import ItemDetalle from '../ItemDetalle/ItemDetalle'
 
 const ContenedorItemDetalle = () => {
 
-    const url = "http://localhost:3001/productos/1"
+    const {productId} = useParams()
+
+    const URL = `http://localhost:3001/productos/${productId}`
 
     const [errors, setErrors] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -14,7 +17,7 @@ const ContenedorItemDetalle = () => {
         setIsLoading(true)
         const llamarApi = async () => {
             try {
-                const response = await fetch (url)
+                const response = await fetch(URL)
                 const data = await response.json()
                 setItem(data)
             } catch (err){
@@ -26,7 +29,7 @@ const ContenedorItemDetalle = () => {
         llamarApi()
 
 
-    }, [])
+    }, [productId])
 
     if (isLoading){
         return <p>Cargando...</p>
@@ -34,9 +37,9 @@ const ContenedorItemDetalle = () => {
         return <p>Ha habido un error</p>
     } else {
         return <div>
-            <ItemDetalle id={item.id} name={item.name} tipo={item.tipo} marca={item.marca} price={item.price} desc={item.desc} image={item.image} stock={item.stock} caracGen={item.caracGen} sensorOptico={item.sensorOptico} zoom={item.zoom} memoria={item.memoria} lente={item.lente} bateria={item.bateria} flash={item.flash} obturador={item.obturador} especificaciones={item.especificaciones} enfoque={item.enfoque} pesoDimen={item.pesoDimen} fullDesc={item.fullDesc}/>
+            <ItemDetalle name={item.name} image={item.image} price={item.price} desc={item.desc} stock={item.stock} caracGen={item.caracGen} sensorOptico={item.sensorOptico} zoom={item.zoom} memoria={item.memoria} lente={item.lente} bateria={item.bateria} flash={item.flash} obturador={item.obturador} especificaciones={item.especificaciones} enfoque={item.enfoque} pesoDimen={item.pesoDimen} fullDesc={item.fullDesc}/>
     </div>
-    }
+    } 
 }
 
 export default ContenedorItemDetalle;

@@ -1,20 +1,42 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import Productos from "./components/Productos/Productos";
-import HeroSec from "./components/HeroSec/HeroSec";
 import NavBar from "./components/NavBar/NavBar";
-import ContenedorItemDetalle from './components/ContenedorItemDetalle/ContenedorItemDetalle';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import LandingPage from './pages/LandingPage';
+import ProductsPage from './pages/ProductsPage';
+import AboutPage from './pages/AboutPage';
+import GalleryPage from './pages/GalleryPage';
+import ContactPage from './pages/ContactPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import NotFoundPage from './pages/NotFoundPage';
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   
   return (
-    <div>
-      <HeroSec />
+    <BrowserRouter>
       <NavBar />
-      <Productos />
-      <ContenedorItemDetalle></ContenedorItemDetalle>
-  
-    </div>
+      <Routes>
+        <Route path="/">
+          <Route index element={<LandingPage />}/>
+          <Route path="store" >
+            <Route index element={<ProductsPage />} />
+            <Route path=":productId" element={<ProductDetailPage />}/>
+          </Route>
+          <Route path="about" element={<AboutPage />} />
+          <Route path="gallery" element={<GalleryPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />}/>
+        </Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
