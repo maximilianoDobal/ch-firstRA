@@ -16,7 +16,6 @@ const Item = ({id, name, desc, price, image}) => {
             <div>
                 <button className="btn__verMas" onClick={()=>navigate(`/store/${id}`)}>Ver Mas</button>
                 <button className="btn__Agregar">Agregar <PlusAgregar /></button>
-                {console.log(navigate)}
             </div>
             
         </>
