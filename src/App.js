@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
-import ProductsPage from './pages/ProductsPage';
+import ItemListContainer from './pages/ItemListContainer';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
@@ -26,7 +26,7 @@ function App() {
         <Route path="/">
           <Route index element={<LandingPage />}/>
           <Route path="store" >
-            <Route index element={<ProductsPage />} />
+            <Route index element={<ItemListContainer />} />
             <Route path=":productId" element={<ProductDetailPage />}/>
           </Route>
           <Route path="about" element={<AboutPage />} />

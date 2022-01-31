@@ -1,9 +1,9 @@
 import React from 'react';
-import ContenedorItemDetalle from '../components/ContenedorItemDetalle/ContenedorItemDetalle'
+import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
 
 const ProductDetailPage = () => {
   return <>
-    <ContenedorItemDetalle />
+    <ItemDetailContainer />
   </>;
 };
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { IoCart } from 'react-icons/io5'
-import './CarritoIcono.css'
+import './CardWidget.css'
 
-const CarritoIcono = () => {
+const CardWidget = () => {
     return (
         <>
             <IoCart className="carritoIconoEstilo"/>
@@ -10,4 +10,4 @@ const CarritoIcono = () => {
     )
 }
 
-export default CarritoIcono
+export default CardWidget

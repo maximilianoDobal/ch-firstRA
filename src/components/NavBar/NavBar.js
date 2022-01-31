@@ -1,6 +1,6 @@
 import "./NavBar.css";
 
-import CarritoIcono from "../Icons/CarritoIcono/CarritoIcono";
+import CardWidget from "../Icons/CardWidget/CardWidget";
 import Badge from "react-bootstrap/Badge";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const NavBar = () => {
                     <li><Link to="/about">Nosotros</Link></li>
                     <li><Link to="/gallery">Galeria</Link></li>
                     <li><Link to="/contact">Contacto</Link></li>
-                    <li><CarritoIcono /><Badge bg="warning" pill>4</Badge></li>
+                    <li><CardWidget /><Badge bg="warning" pill>4</Badge></li>
                 </ul>
             </div>
         </nav>

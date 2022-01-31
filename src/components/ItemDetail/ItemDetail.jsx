@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 
-const ItemDetalle = ({
+const ItemDetail = ({
   name,
   image,
   price,
@@ -31,7 +31,7 @@ const ItemDetalle = ({
   };
 
   const restarCantidad = () => {
-    if (cantidad > 0) {
+    if (cantidad > 1) {
       setcantidad(cantidad - 1);
     }
   };
@@ -52,7 +52,7 @@ const ItemDetalle = ({
           </Col>
           <Col md={7}>
             <div>
-              <h6>Precio unitario: ${price}</h6>
+              <h6>Precio unitario: {pesos.format(price)}</h6>
               <div className="cantidadContainer">
                 <button onClick={restarCantidad} className="btn__cantidad">
                   -
@@ -290,4 +290,4 @@ const ItemDetalle = ({
   );
 };
 
-export default ItemDetalle;
+export default ItemDetail;
