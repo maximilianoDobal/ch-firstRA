@@ -1,0 +1,25 @@
+.btn__cantidad{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btn__cantidad:hover{
+    background-color: #08d9d6;
+    border: none;
+}
+.cantidad__texto{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cantidadContainer{
+    display: flex;
+    align-items: flex-end;
+}

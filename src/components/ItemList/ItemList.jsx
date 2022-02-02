@@ -19,7 +19,9 @@ const ItemList = () => {
         const getStock = async () => {
             try {
                 const response = await fetch(url)
+                console.log(response)
                 const data = await response.json()
+                console.log(data)
                 setProds(data)
             } catch (err){
                 setErrors(err)

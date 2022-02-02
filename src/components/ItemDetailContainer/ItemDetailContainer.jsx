@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import ItemDetail from '../ItemDetail/ItemDetail'
 import data from '../../mocks/stock.json';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
 

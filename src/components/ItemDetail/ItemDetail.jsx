@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({
   name,
@@ -24,17 +25,7 @@ const ItemDetail = ({
   pesoDimen,
   fullDesc,
 }) => {
-  const [cantidad, setcantidad] = useState(1);
-
-  const agregarCantidad = () => {
-    setcantidad(cantidad + 1);
-  };
-
-  const restarCantidad = () => {
-    if (cantidad > 1) {
-      setcantidad(cantidad - 1);
-    }
-  };
+  const [cantidad, setCantidad] = useState(1);
   const pesos = new Intl.NumberFormat("es-AR", {
     style: "currency",
     currency: "ARS",
@@ -53,15 +44,7 @@ const ItemDetail = ({
           <Col md={7}>
             <div>
               <h6>Precio unitario: {pesos.format(price)}</h6>
-              <div className="cantidadContainer">
-                <button onClick={restarCantidad} className="btn__cantidad">
-                  -
-                </button>
-                <p className="cantidad__texto">{cantidad}</p>
-                <button onClick={agregarCantidad} className="btn__cantidad">
-                  +
-                </button>
-              </div>
+              <ItemCount cantidad={cantidad} setCantidad={setCantidad} />
               <p className={cantidad > stock ? "rojo" : ""}>Cantidad en Stock: {cantidad < stock ? stock-cantidad : "No tenemos tanto Stock"}</p>
               <h4>Precio Total: {pesos.format(price * cantidad)}</h4>
             </div>
