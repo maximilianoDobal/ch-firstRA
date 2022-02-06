@@ -1,11 +1,19 @@
-import 'react-app-polyfill/ie9';
-import 'react-app-polyfill/stable';
+import '../node_modules/react-app-polyfill/ie9';
+import '../node_modules/react-app-polyfill/stable';
+import '../node_modules/core-js/es/object/entries'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+if(!Object.entries){
+  Object.entries =function (obj) {
+    var ownProps = Object.keys(obj), i =ownProps.length, resArray = new Array(i);
+    while (i--)
+    resArray[i] = [ownProps[i], obj[ownProps[i]]];
+    return resArray
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>

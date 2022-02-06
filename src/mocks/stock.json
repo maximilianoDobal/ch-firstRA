@@ -10,30 +10,45 @@
       "image": "https://picsum.photos/id/237/300/350",
       "stock": 20,
       "caracGen": {
+        "id": "a1",
         "fabricante": "Sony",
         "marca": "Sony",
         "linea": "Alpha",
         "modelo": "ILCE-7RM4A",
         "kit": "si",
-        "video": "si"
+        "video": "si" 
       },
-      "sensorOptico": { "tipo": "CMOS", "tamaño": "35.7 mm x 23.8 mm" },
-      "zoom": { "zoomDigital": "8x" },
-      "memoria": { "tipos": "SD, SDHC, SDXC, Micro-SD, MicroSDHC, MicroSDXC" },
+      "sensorOptico": {
+        "id": "a2",
+        "tipo": "CMOS", 
+        "tamano": "35.7 mm x 23.8 mm" 
+      },
+      "zoom": {"id": "a3", "zoomDigital": "8x"},
+      "memoria": {"id": "a4", "tipos": "SD, SDHC, SDXC, Micro-SD, MicroSDHC, MicroSDXC" },
       "lente": {
+        "id": "a5",
         "montura": "Sony E",
         "tipo": "Gran Angular",
         "incluye": "si",
         "intercambiable": "si"
       },
-      "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "NP-FZ100" },
-      "flash": { "incluye": "no" },
-      "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
+      "bateria": {
+        "id": "a6",
+         "composicion": "Ion de litio (Li-ion)", 
+        "tipo": "NP-FZ100"
+      },
+      "flash": {"id": "a7",  "incluye": "no" },
+      "obturador": {
+        "id": "a8",
+         "velMin": "30 s", 
+        "velMax": "1/8000 s"
+      },
       "especificaciones": {
+        "id": "a9",
         "tipo": "Sin espejo",
         "resolucion": "26.2 Mpx",
-        "tamañoPant": 3,
-        "ISO": "ISO 100",
+        "tamanoPant": 3,
+        "iso": "ISO 100",
         "resVideo": "3840x2160 Mpx",
         "tipoRes": "4K",
         "interfaces": "micro-USB, Micro HDMI, Mini jack",
@@ -43,11 +58,13 @@
         "pantTactic": "si"
       },
       "enfoque": {
+        "id": "a10",
         "modo": "Simple, Continuo, Automático",
         "manual": "si",
         "autofoco": "si"
       },
       "pesoDimen": {
+        "id": "a11",
         "ancho": "128.9 mm",
         "altura": "96.4 mm",
         "profundidad": "77.5 mm",
@@ -71,20 +88,20 @@
         "modelo": "ILCE-7S",
         "color": "negro"
       },
-      "sensorOptico": { "tipo": "CMOS", "tamaño": "35.7 mm x 23.8 mm" },
-      "zoom":{ "zoomDigital": "si"},
+      "sensorOptico": { "tipo": "CMOS", "tamano": "35.7 mm x 23.8 mm" },
+      "zoom": { "zoomDigital": "si" },
       "memoria": {
         "tipos": "Memory Stick Pro Duo, Memory Stick PRO-HG Duo, Memory Stick XC-HG Duo, SD, SDHC, SDXC"
       },
       "lente": { "montura": "Sony E", "intercambiable": "no" },
       "bateria": { "composicion": "Ion de litio (Li-ion)", "tipo": "NP-FW50" },
-      "flash": {"incluye": "no"},
+      "flash": { "incluye": "no" },
       "obturador": { "velMin": "30 s", "velMax": "1/8000 s" },
       "especificaciones": {
         "tipo": "Sin espejo",
         "resolucion": "12.2 Mpx",
-        "tamañoPant": 3,
-        "ISO": "ISO 50-409600",
+        "tamanoPant": 3,
+        "iso": "ISO 50-409600",
         "conectividad": "Wi-Fi, NFC",
         "interfaces": "micro-HDMI, micro-USB"
       },
@@ -117,7 +134,7 @@
         "modelo": "ILCE-7SM2",
         "color": "negro"
       },
-      "sensorOptico": { "tipo": "CMOS", "tamaño": "35.7 mm x 23.8 mm" },
+      "sensorOptico": { "tipo": "CMOS", "tamano": "35.7 mm x 23.8 mm" },
       "zoom": { "zoomOptico": "4x" },
       "memoria": {
         "tipos": "Memory Stick Pro Duo, Memory Stick PRO-HG Duo, Memory Stick Micro, SD, SDHC, SDXC, micro-SD, micro-SDHC, micro-SDXC"
@@ -129,7 +146,7 @@
       "especificaciones": {
         "tipo": "Sin espejo",
         "resolucion": "12.2 Mpx",
-        "ISO": "ISO 100-409600",
+        "iso": "ISO 100-409600",
         "conectividad": "Wi-Fi, NFC",
         "interfaces": "micro-USB, micro-HDMI"
       },
@@ -163,8 +180,8 @@
         "color": "negro",
         "kit": "si"
       },
-      "sensorOptico": { "tipo": "CMOS", "tamaño": "36 mm x 24 mm" },
-      "zoom": {"zoomDigital": "si"},
+      "sensorOptico": { "tipo": "CMOS", "tamano": "36 mm x 24 mm" },
+      "zoom": { "zoomDigital": "si" },
       "memoria": { "tipos": "SD UHS-I, SDHC UHS-I, SDXC UHS-I" },
       "lente": {
         "montura": "Canon EFE",
@@ -181,8 +198,8 @@
       "especificaciones": {
         "tipo": "DSLR",
         "resolucion": "30.4 Mpx",
-        "tamañoPant": "3.2",
-        "ISO": "50-102400",
+        "tamanoPant": "3.2",
+        "iso": "50-102400",
         "resVideo": "3840x2160 Mpx",
         "tipoRes": "4K",
         "conectividad": "Wi-Fi, NFC, GPS",
@@ -219,8 +236,8 @@
         "color": "negro",
         "kit": "si"
       },
-      "sensorOptico": { "tipo": "CMOS", "tamaño": "23.5 mm x 15.7 mm" },
-      "zoom": {"zoomDigital": "si"},
+      "sensorOptico": { "tipo": "CMOS", "tamano": "23.5 mm x 15.7 mm" },
+      "zoom": { "zoomDigital": "si" },
       "memoria": { "tipos": "SD, SDHC UHS-I, SDXC UHS-I" },
       "lente": {
         "montura": "Nikon F",
@@ -236,8 +253,8 @@
       "especificaciones": {
         "tipo": "DSLR",
         "resolucion": "20.9 Mpx",
-        "tamañoPant": "3.2",
-        "ISO": "100-1640000",
+        "tamanoPant": "3.2",
+        "iso": "100-1640000",
         "resVideo": "3840x2160 Mpx",
         "tipoRes": "4K",
         "conectividad": "Bluetooth, Wi-Fi",

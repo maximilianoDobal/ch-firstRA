@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import Row from 'react-bootstrap/Row'
-import Container from 'react-bootstrap/Container'
-import Item from '../Item/Item'
-import './ItemList.css'
-import Col from 'react-bootstrap/Col'
+import React, { memo, useEffect, useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Item from '../Item/Item';
+import './ItemList.css';
+import Col from 'react-bootstrap/Col';
 
 const url = "http://localhost:3001/productos"
 const ItemList = () => {
@@ -54,4 +54,4 @@ const ItemList = () => {
 
 }
 
-export default ItemList
+export default memo(ItemList)

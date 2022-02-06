@@ -1,11 +1,12 @@
-import React from 'react'
-import PlusAgregar from '../Icons/PlusAgregar/PlusAgregar'
-import './Item.css'
-import { useNavigate } from 'react-router'
+import React, { memo } from 'react';
+import PlusAgregar from '../Icons/PlusAgregar/PlusAgregar';
+import './Item.css';
+import { useNavigate } from 'react-router';
 
 const Item = ({id, name, desc, price, image}) => {
 
     const navigate = useNavigate()
+    
     
     return (
         <>
@@ -22,4 +23,4 @@ const Item = ({id, name, desc, price, image}) => {
     )
 }
 
-export default Item
+export default memo(Item)

@@ -18,7 +18,7 @@ const NavBar = () => {
                     <li><Link to="/about">Nosotros</Link></li>
                     <li><Link to="/gallery">Galeria</Link></li>
                     <li><Link to="/contact">Contacto</Link></li>
-                    <li><CardWidget /><Badge bg="warning" pill>4</Badge></li>
+                    <li><Link to="/cart"><CardWidget /><Badge bg="warning" pill>4</Badge></Link></li>
                 </ul>
             </div>
         </nav>
