@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import PlusAgregar from '../Icons/PlusAgregar/PlusAgregar';
 import './Item.css';
 import { useNavigate } from 'react-router';
 
@@ -16,7 +15,6 @@ const Item = ({id, name, desc, price, image}) => {
             <p className="articulo__precio">${price}</p>
             <div>
                 <button className="btn__verMas" onClick={()=>navigate(`/store/${id}`)}>Ver Mas</button>
-                <button className="btn__Agregar">Agregar <PlusAgregar /></button>
             </div>
             
         </>

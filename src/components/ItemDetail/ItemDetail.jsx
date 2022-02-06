@@ -32,8 +32,6 @@ const ItemDetail = ({
 
   const addToCart = () =>{
     addItem(item, cantidad)
-  //  return isInCart(item.id) ? null : addItem(item, cantidad)
-  //   console.log(cart)
   }
 
   return (
