@@ -1,6 +1,49 @@
-.rojo{
-    color:red
+.agregarCart {
+  background-color: #08d9d6;
+  border-color: #08d9d6;
+  color: #eaeaea;
+  transition: transform 0.5s ease-in-out;
 }
-.bg-grey{
-    background-color: grey;
+.agregarCart:hover {
+  background-color: hsl(179, 93%, 24%);
+  border-color: hsl(179, 93%, 24%);
+}
+.agregarCart:active {
+  background-color: hsl(179, 93%, 24%);
+  border-color: hsl(179, 93%, 24%);
+  color: hsl(179, 93%, 24%);
+  transform: scale(0.9);
+}
+.agregarCart:focus {
+  background-color: hsl(179, 93%, 24%);
+  border-color: hsl(179, 93%, 24%);
+  color: hsl(179, 93%, 24%);
+  transform: scale(0.9);
+  box-shadow: none;
+}
+.endBuy {
+  background-color: transparent;
+  border-color: #08d9d6;
+  color: #08d9d6;
+  transition: transform 0.5s ease-in-out;
+}
+.endBuy:active {
+  background-color: transparent;
+  border-color: #08d9d6;
+  color: #08d9d6;
+  transform: scale(0.9);
+}
+.endBuy:hover {
+  background-color: transparent;
+  border-color: #08d9d6;
+  color: #08d9d6;
+}
+.endBuy:focus {
+  background-color: transparent;
+  border-color: #08d9d6;
+  color: #08d9d6;
+  box-shadow: none;
+}
+button.endBuy a {
+  color: #08d9d6;
 }

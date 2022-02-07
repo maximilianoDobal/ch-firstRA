@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import data from '../../mocks/stock.json';
 import ItemDetail from '../ItemDetail/ItemDetail';
@@ -71,4 +71,4 @@ const ItemDetailContainer = () => {
     } 
 }
 
-export default memo(ItemDetailContainer);
+export default ItemDetailContainer;

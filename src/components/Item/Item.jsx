@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import './Item.css';
 import { useNavigate } from 'react-router';
 
@@ -21,4 +21,4 @@ const Item = ({id, name, desc, price, image}) => {
     )
 }
 
-export default memo(Item)
+export default Item

@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -6,6 +6,8 @@ import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import ItemCount from "../ItemCount/ItemCount";
 import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
+import './ItemDetail.css';
 
 const ItemDetail = ({
   item,
@@ -24,6 +26,8 @@ const ItemDetail = ({
 
   const [cantidad, setCantidad] = useState(1);
   const { addItem } = useCart()
+  const [textChange, setTextChange] = useState("Agregar a Carrito")
+  const [btnChange, setBtnChange] = useState("agregarCart")
 
   const pesos = new Intl.NumberFormat("es-AR", {
     style: "currency",
@@ -32,6 +36,8 @@ const ItemDetail = ({
 
   const addToCart = () =>{
     addItem(item, cantidad)
+    setTextChange("Finalizar Compra")
+    setBtnChange("endBuy")
   }
 
   return (
@@ -52,7 +58,7 @@ const ItemDetail = ({
               <h4>Precio Total: {pesos.format(item.price * cantidad)}</h4>
           </div>
           <p>{item.desc}</p>
-          <Button variant="warning" onClick={addToCart}>Agregar a Carrito</Button>
+          <Button variant="warning" onClick={textChange !== "Finalizar Compra" ? addToCart : null} className={btnChange}>{textChange === "Finalizar Compra" ? <Link to="/cart">{textChange}</Link> : `${textChange}`}</Button>
           </Col>
           <Col md={12} className="mt-5">
             <h3>Caracteristicas de {item.name}</h3>
@@ -336,4 +342,4 @@ const ItemDetail = ({
    );
   };
 
-export default memo(ItemDetail);
+export default ItemDetail;
