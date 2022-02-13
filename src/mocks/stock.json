@@ -1,7 +1,6 @@
 {
   "productos": [
     {
-      "id": 1,
       "name": "Camara Digital Mirrorless Sony A7r",
       "tipo": "camara",
       "marca": "Sony",
@@ -10,41 +9,31 @@
       "image": "https://picsum.photos/id/237/300/350",
       "stock": 20,
       "caracGen": {
-        "id": "a1",
         "fabricante": "Sony",
         "marca": "Sony",
         "linea": "Alpha",
-        "modelo": "ILCE-7RM4A",
-        "kit": "si",
-        "video": "si" 
+        "modelo": "ILCE-7RM4A"
       },
       "sensorOptico": {
-        "id": "a2",
         "tipo": "CMOS", 
         "tamano": "35.7 mm x 23.8 mm" 
       },
-      "zoom": {"id": "a3", "zoomDigital": "8x"},
-      "memoria": {"id": "a4", "tipos": "SD, SDHC, SDXC, Micro-SD, MicroSDHC, MicroSDXC" },
+      "zoom": {"zoomDigital": "8x"},
+      "memoria": {"tipos": "SD, SDHC, SDXC, Micro-SD, MicroSDHC, MicroSDXC" },
       "lente": {
-        "id": "a5",
         "montura": "Sony E",
-        "tipo": "Gran Angular",
-        "incluye": "si",
-        "intercambiable": "si"
+        "tipo": "Gran Angular"
       },
       "bateria": {
-        "id": "a6",
-         "composicion": "Ion de litio (Li-ion)", 
+        "composicion": "Ion de litio (Li-ion)", 
         "tipo": "NP-FZ100"
       },
-      "flash": {"id": "a7",  "incluye": "no" },
+      "flash": {"incluye": "no" },
       "obturador": {
-        "id": "a8",
-         "velMin": "30 s", 
+        "velMin": "30 s", 
         "velMax": "1/8000 s"
       },
       "especificaciones": {
-        "id": "a9",
         "tipo": "Sin espejo",
         "resolucion": "26.2 Mpx",
         "tamanoPant": 3,
@@ -58,13 +47,11 @@
         "pantTactic": "si"
       },
       "enfoque": {
-        "id": "a10",
         "modo": "Simple, Continuo, Automático",
         "manual": "si",
         "autofoco": "si"
       },
       "pesoDimen": {
-        "id": "a11",
         "ancho": "128.9 mm",
         "altura": "96.4 mm",
         "profundidad": "77.5 mm",
@@ -73,7 +60,6 @@
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quamLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quamLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
     {
-      "id": 2,
       "name": "Camara Digital Mirrorless Sony 7S",
       "tipo": "camara",
       "marca": "Sony",
@@ -119,7 +105,6 @@
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
     {
-      "id": 3,
       "name": "Camara Digital Mirrorless Sony 7SII",
       "tipo": "camara",
       "marca": "Sony",
@@ -164,7 +149,6 @@
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
     {
-      "id": 4,
       "name": "Canon EOS Kit 5D Mark IV",
       "tipo": "camara",
       "marca": "Canon",
@@ -221,7 +205,6 @@
       "fullDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis tortor orci. Maecenas sodales placerat diam, commodo placerat diam elementum in. Quisque venenatis, nunc sed dictum eleifend, dolor odio vestibulum arcu, non fermentum neque augue quis est. Cras id hendrerit metus. Integer a suscipit odio, pharetra mattis neque. Quisque eget arcu et quam"
     },
     {
-      "id": 5,
       "name": "Nikon Kit D7500",
       "tipo": "camara",
       "marca": "Nikon",

@@ -25,7 +25,7 @@ const ItemDetail = ({
 }) => {
 
   const [cantidad, setCantidad] = useState(1);
-  const { addItem } = useCart()
+  const { addItem, isInCart } = useCart()
   const [textChange, setTextChange] = useState("Agregar a Carrito")
   const [btnChange, setBtnChange] = useState("agregarCart")
 
@@ -33,6 +33,12 @@ const ItemDetail = ({
     style: "currency",
     currency: "ARS",
   });
+
+  const verificador = () =>{
+    
+    return isInCart(item.id) ? null : addToCart()
+    
+  }
 
   const addToCart = () =>{
     addItem(item, cantidad)
@@ -58,7 +64,7 @@ const ItemDetail = ({
               <h4>Precio Total: {pesos.format(item.price * cantidad)}</h4>
           </div>
           <p>{item.desc}</p>
-          <Button variant="warning" onClick={textChange !== "Finalizar Compra" ? addToCart : null} className={btnChange}>{textChange === "Finalizar Compra" ? <Link to="/cart">{textChange}</Link> : `${textChange}`}</Button>
+          <Button variant="warning" onClick={textChange !== "Finalizar Compra" ? verificador : null} className={btnChange}>{textChange === "Finalizar Compra" ? <Link to="/cart">{textChange}</Link> : `${textChange}`}</Button>
           </Col>
           <Col md={12} className="mt-5">
             <h3>Caracteristicas de {item.name}</h3>
@@ -87,14 +93,15 @@ const ItemDetail = ({
                   <td>Modelo</td>
                   <td>{dataCaracGen.modelo}</td>
                 </tr>
-                <tr>
+                {dataCaracGen.kit ? <tr>
                   <td>Incluye Kit</td>
                   <td>{dataCaracGen.kit}</td>
-                </tr>
-                <tr>
+                </tr> : null}
+                {dataCaracGen.video ? <tr>
                   <td>Incluye Video</td>
                   <td>{dataCaracGen.video}</td>
-                </tr>
+                </tr> : null}
+                
               </tbody>
             </Table> 
           </Col>
@@ -127,7 +134,7 @@ const ItemDetail = ({
               <tbody>
                 <tr>
                   <td>Zoom Digital</td>
-                  <td>{dataZoom.zoomDigital}</td>
+                  <td>{dataZoom.zoomOptico}</td>
                 </tr>
               </tbody>
             </Table>

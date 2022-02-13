@@ -12,10 +12,11 @@ export const CartProvider = ({ children }) => {
     setCart((prev) => [...prev, newItem]);
   };
 
-  // const isInCart = (id) =>{
-  //   console.log(cart.filter((obj) => obj.id === id) === [] )
-  //   return cart.filter((obj) => obj.id === id) === [] 
-  // }
+  const isInCart = (id) =>{
+
+    const cartVerificador = cart.map((obj) => obj.item.id).filter((obj) => obj === id)
+    return cartVerificador.length >= 1 ? true : false
+  }
 
 
   const removeItem = (id) => {
@@ -27,7 +28,7 @@ export const CartProvider = ({ children }) => {
   }
 
   return (
-    <CartContext.Provider value={{ cart, addItem, clear, removeItem }}>
+    <CartContext.Provider value={{ cart, addItem, clear, removeItem, isInCart }}>
       {children}
     </CartContext.Provider>
   );

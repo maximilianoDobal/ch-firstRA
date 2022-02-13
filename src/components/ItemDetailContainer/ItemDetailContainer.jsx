@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import data from '../../mocks/stock.json';
+import { getFirestore } from '../../firebase';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
 
     const {productId} = useParams()
-
-    // const URL = `http://localhost:3001/productos/${productId}`
 
     const [errors, setErrors] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -17,7 +15,7 @@ const ItemDetailContainer = () => {
     const [dataZoom, setDataZoom] = useState({})
     const [dataMemoria, setDataMemoria] = useState({})
     const [dataLente, setDataLente] = useState({})
-    const [dataBateria, setdataBateria] = useState({})
+    const [dataBateria, setDataBateria] = useState({})
     const [dataFlash, setDataFlash] = useState({})
     const [dataObturador, setDataObturador] = useState({})
     const [dataEspecificaciones, setDataEspecificaciones] = useState({})
@@ -27,37 +25,26 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
 
+        const db = getFirestore()
+        const collection = db.collection('productos')
+        const productoIndividual = collection.doc(productId)
+
         setIsLoading(true)
-        const llamarApi = async () => {
-            try {
-                // const response = await fetch(URL)
-                // const data = await response.json()
-                
-                // console.log("data.productos", data.productos.find((i) => i.id === parseInt(productId)))
-                setItem(data.productos.find((i) => i.id === parseInt(productId)))
-                
-                setDataCaracGen(data.productos.find((i) => i.id === parseInt(productId)).caracGen)
-                setDataSensorOptico(data.productos.find((i) => i.id === parseInt(productId)).sensorOptico)
-                setDataZoom(data.productos.find((i) => i.id === parseInt(productId)).zoom)
-                setDataMemoria(data.productos.find((i) => i.id === parseInt(productId)).memoria)
-                setDataLente(data.productos.find((i) => i.id === parseInt(productId)).lente)
-                setdataBateria(data.productos.find((i) => i.id === parseInt(productId)).bateria)
-                setDataFlash(data.productos.find((i) => i.id === parseInt(productId)).flash)
-                setDataObturador(data.productos.find((i) => i.id === parseInt(productId)).obturador)
-                setDataEspecificaciones(data.productos.find((i) => i.id === parseInt(productId)).especificaciones)
-                setDataEnfoque(data.productos.find((i) => i.id === parseInt(productId)).enfoque)
-                setDataPesoDimen(data.productos.find((i) => i.id === parseInt(productId)).pesoDimen)
-                
-                
-            } catch (err){
-                setErrors(err)
-            } finally{
-                setIsLoading(false)
-            }
-        }
-        llamarApi()
-
-
+        productoIndividual.get().then((res) => {
+            if (!res.exists) console.log("El producto no existe");
+            setItem({...res.data(), id: res.id})
+            setDataCaracGen(res.data().caracGen)
+            setDataSensorOptico(res.data().sensorOptico)
+            setDataZoom(res.data().zoom)
+            setDataMemoria(res.data().memoria)
+            setDataLente(res.data().lente)
+            setDataBateria(res.data().bateria)
+            setDataFlash(res.data().flash)
+            setDataObturador(res.data().obturador)
+            setDataEspecificaciones(res.data().especificaciones)
+            setDataEnfoque(res.data().enfoque)
+            setDataPesoDimen(res.data().pesoDimen)
+        }).catch((err) => setErrors(err)).finally(setIsLoading(false))
     }, [productId])
 
     if (isLoading){
