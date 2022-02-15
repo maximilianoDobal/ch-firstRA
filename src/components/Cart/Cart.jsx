@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import Container from "react-bootstrap/Container";
 import "./Cart.css";
@@ -8,10 +8,22 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import Back from "../Icons/Back/Back";
+import CartModal from "../CartModal/CartModal";
 
 const Cart = () => {
   const { cart, clear } = useCart();
+  const [show, setShow] = useState(false)
 
+  
+  const handleOpen = () => {
+    setShow(true)
+  }
+  
+  const handleClose = () => {
+    setShow(false)
+  }
+
+  
   return (
     <>
       <h1 className="cart-title">Carrito</h1>
@@ -26,6 +38,8 @@ const Cart = () => {
           Borrar Todos
         </Button> : null}
       {cart.length !== 0 ? <h4>Precio Total: ${cart.map((obj) => obj.item.price * obj.quantity).reduce((a, b) => a + b, 0)}</h4> : null}
+      {cart.length !== 0 ? <button onClick={handleOpen}>Finalizar compra</button> : null}
+      {show ? <CartModal show={show} handleClose={handleClose}></CartModal> : null}
       </Container>
     </>
   );

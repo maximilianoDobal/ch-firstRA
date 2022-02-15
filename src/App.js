@@ -12,6 +12,7 @@ import CartPage from "./pages/CartPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./components/Footer/Footer";
 import { CartProvider } from "./context/CartContext";
+import SuccesBuyPage from "./pages/SuccesBuyPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="gallery" element={<GalleryPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="cart" element={<CartPage />} />
+            <Route path="succesBuyPage/:orderId" element={<SuccesBuyPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
