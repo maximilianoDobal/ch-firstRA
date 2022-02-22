@@ -1,10 +1,7 @@
 import Nosotros from "../components/Nosotros/Nosotros";
 
-
 const AboutPage = () => {
-  return (
-    <Nosotros />
-  );
+  return <Nosotros />;
 };
 
 export default AboutPage;

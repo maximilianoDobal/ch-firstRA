@@ -1,10 +1,12 @@
-import React from 'react';
-import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
+import React from "react";
+import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
 
 const ProductDetailPage = () => {
-  return <>
-    <ItemDetailContainer />
-  </>;
+  return (
+    <>
+      <ItemDetailContainer />
+    </>
+  );
 };
 
 export default ProductDetailPage;

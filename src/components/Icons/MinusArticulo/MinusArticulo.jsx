@@ -1,13 +1,12 @@
-import React from 'react'
-import { AiFillMinusCircle } from 'react-icons/ai'
-
+import React from "react";
+import { AiFillMinusCircle } from "react-icons/ai";
 
 const MinusArticulo = () => {
-    return (
-        <>
-            <AiFillMinusCircle />
-        </>
-    )
-}
+  return (
+    <>
+      <AiFillMinusCircle />
+    </>
+  );
+};
 
-export default MinusArticulo
+export default MinusArticulo;

@@ -42,7 +42,7 @@ const CartModal = ({ show, handleClose }) => {
       };
       console.log(newOrder);
 
-      console.log(cart)
+      console.log(cart);
       const db = getFirestore();
       db.collection("orders")
         .add(newOrder)
@@ -51,7 +51,6 @@ const CartModal = ({ show, handleClose }) => {
           navigate(`/succesBuyPage/${res.id}`);
         })
         .catch((err) => console.log(err));
-
     }
   };
 

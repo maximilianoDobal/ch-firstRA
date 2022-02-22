@@ -3,9 +3,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import DeleteFromCart from "../Icons/DeleteFromCart/DeleteFromCart";
 import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router";
 
 const CartCard = ({ item, quantity }) => {
   const { removeItem } = useCart();
+
+  const { orderId } = useParams();
 
   return (
     <Row className="cartaCarrito" key={item.id}>
@@ -18,7 +22,9 @@ const CartCard = ({ item, quantity }) => {
         md={6}
         className="d-flex flex-column justify-content-center align-items-start"
       >
-        <h4>{item.name}</h4>
+        <Link to={`/store/${item.id}`}>
+          <h4>{item.name}</h4>
+        </Link>
         <p>Cantidad: {quantity}</p>
       </Col>
       <Col
@@ -27,9 +33,14 @@ const CartCard = ({ item, quantity }) => {
       >
         <p>Precio por unidad: ${item.price}</p>
         <h5>Precio: ${item.price * quantity}</h5>
-        <button onClick={() => removeItem(item.id)} className="btn-removeItem">
-          Eliminar Item <DeleteFromCart />
-        </button>
+        {orderId ? null : (
+          <button
+            onClick={() => removeItem(item.id)}
+            className="btn-removeItem"
+          >
+            Eliminar Item <DeleteFromCart />
+          </button>
+        )}
       </Col>
     </Row>
   );

@@ -1,8 +1,12 @@
-import React from 'react';
-import ItemList from '../components/ItemList/ItemList';
+import React from "react";
+import ItemList from "../components/ItemList/ItemList";
 
 const ItemListContainer = () => {
-  return <><ItemList /></>;
+  return (
+    <>
+      <ItemList />
+    </>
+  );
 };
 
 export default ItemListContainer;

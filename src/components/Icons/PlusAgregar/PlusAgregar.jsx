@@ -1,12 +1,12 @@
-import React from 'react';
-import { AiFillPlusCircle } from 'react-icons/ai';
+import React from "react";
+import { AiFillPlusCircle } from "react-icons/ai";
 
 const PlusAgregar = () => {
-    return (
-        <>
-            <AiFillPlusCircle />
-        </>
-    )
-}
+  return (
+    <>
+      <AiFillPlusCircle />
+    </>
+  );
+};
 
-export default PlusAgregar
+export default PlusAgregar;

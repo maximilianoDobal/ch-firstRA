@@ -43,3 +43,6 @@ ul li a:hover {
 .hide {
   opacity: 0;
 }
+.colorHover {
+  color: #08d9d6 !important;
+}

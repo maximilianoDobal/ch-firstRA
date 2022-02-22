@@ -8,7 +8,7 @@ const ItemCount = (props) => {
 
   const restarCantidad = () => {
     if (props.cantidad > 1) {
-        props.setCantidad(props.cantidad - 1);
+      props.setCantidad(props.cantidad - 1);
     }
   };
   return (
